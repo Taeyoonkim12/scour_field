@@ -77,14 +77,14 @@ X_val, X_test, y_val, y_test = train_test_split(X_temp, y_temp, test_size=0.5, r
 # Define hyperparameters for the XGBoost model
 params = {
     'objective': 'reg:squarederror',  # Objective for regression
-    'n_estimators': 1000,  # Maximum number of boosting iterations
+    'n_estimators': 655,  # Maximum number of boosting iterations
     'learning_rate': 0.02,  # Learning rate for gradient boosting
-    'gamma': 0.7,  # Minimum loss reduction for a split
+    'gamma': 0.6998,  # Minimum loss reduction for a split
     'subsample': 0.58,  # Fraction of data used for training per iteration
     'max_depth': 5,  # Maximum depth of trees
     'min_child_weight': 3,  # Minimum sum of weights for child nodes
-    'reg_alpha': 0.6,  # L1 regularization term
-    'reg_lambda': 0.5  # L2 regularization term
+    'reg_alpha': 0.60,  # L1 regularization term
+    'reg_lambda': 0.50  # L2 regularization term
 }
 
 # Initialize and train the XGBoost regressor
